@@ -13,9 +13,16 @@
 
 //* construindo um loop while
 
+// let a = 0
+
+//     while (a < 3){
+//         console.log('Bom dia!');
+//         a++
+//     }
+
+//* o laço do While executa pelo menos uma vez
 let a = 0
 
-    while (a < 3){
-        console.log('Bom dia!');
-        a++
-    }
+    do {
+        console.log(a);
+    } while (a > 0);
