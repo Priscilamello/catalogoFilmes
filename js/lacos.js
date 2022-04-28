@@ -4,10 +4,18 @@
 
 //* vamos construir um loop for para fazer as tabuadas 0 10
 
-for (let i  = 0; i <= 10; i++) {
+// for (let i  = 0; i <= 10; i++) {
 
-    for (let j = 0; j <= 10; j++) {
-        console.log(`${i} x ${j} = ${i*j}`);
+//     for (let j = 0; j <= 10; j++) {
+//         console.log(`${i} x ${j} = ${i*j}`);
+//     }
+// }
+
+//* construindo um loop while
+
+let a = 0
+
+    while (a < 3){
+        console.log('Bom dia!');
+        a++
     }
-}
-
