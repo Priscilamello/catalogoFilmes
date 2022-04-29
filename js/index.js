@@ -1,12 +1,10 @@
 let listaDeFilmes = [
     'https://imagens.ebc.com.br/70-rZMi6fTwlz8DrudsE2MzzHmU=/365x0/smart/https://radios.ebc.com.br/sites/default/files/thumbnails/image/cartaz_do_filme_laranja_mecanica.jpg',
     'https://cinemaemcena.com.br/uploads/criticas_old/interstellar_poster5.jpg',
-    'https://m.media-amazon.com/images/I/614qzkpKLcL._AC_SX522_.jpg',
-    'https://m.media-amazon.com/images/I/71yOrLG9Z+L._AC_SX522_.jpg',
     'https://upload.wikimedia.org/wikipedia/pt/thumb/4/43/Butterflyeffect_poster.jpg/240px-Butterflyeffect_poster.jpg',
     'https://m.media-amazon.com/images/I/81AGqBcpYOL._AC_SY550_.jpg',
     'https://br.web.img2.acsta.net/medias/nmedia/18/91/08/82/20128877.JPG',
-    'https://seuladogeek.com.br/wp-content/uploads/2022/04/Jogador-No-1.jpg',
+    'https://www.filmelgbt.com/wp-content/uploads/2018/09/yXW8XocbanLYcQHmQkqq0clNCFI.jpg',
 
 
 ]
@@ -14,25 +12,53 @@ let listaDeFilmes = [
 let listaDeTitulos = [
 'Laranja Mecanica',
 'InterEstelar',
-'Truque de Mestre',
-'Cantando na Chuva',
 'Efeito Borboleta',
 'Jurassic Park',
 'Matrix',
-'Jogador N° 1',
+'Priscila A Rainha do Deserto',
 
 ]
 
-//! DOM DOCUMENT OBJECT MODEl acessar e manusear documentos no js
-//!tudo que envolve a pag (html etc) js pode conectar a pagina
-//! querySelecto acessa qualquer elemento d dom
-
-let catalogo = document.querySelector ('#catalogo') 
+//! DOM DOCMENT OBJECT MODEL
+let catalogo = document.querySelector('#catalogo')
 let i = 0
 let erro = document.querySelector('#erro')
 
-for (i; i< listaDeFilmes.length; i++){
-    catalogo.innerHTML += `<div class="filme">
-    <img src=${listaDeFilmes[i]}> <figcaption>${listaDeTitulos[i]}</figcaption>
-    </divi>`
+for (i; i < listaDeFilmes.length; i++) {
+  catalogo.innerHTML += `<div class="filme">
+    <img src=${listaDeFilmes[i]}><figcaption>${listaDeTitulos[i]}</figcaption>
+  </div>`
+}
+
+let filmeRepetido = true
+
+function cadastrar() {
+  let novoFilme = document.querySelector('#filme').value
+  
+  let novoTitulo = document.querySelector('#titulo').value
+  
+  if (listaDeFilmes.includes(novoFilme) || listaDeTitulos.includes(novoTitulo)) {
+    erro.innerHTML = `Filme ${novoTitulo} já cadastrado.`
+  }else{
+    listaDeFilmes.push(novoFilme)
+    listaDeTitulos.push(novoTitulo)
+    erro.innerHTML = ''
+    mostraFilmes()
+  }
+  document.querySelector('#filme').value = ''  
+  document.querySelector('#titulo').value = ''  
+  
+}
+
+function mostraFilmes() {
+   do{
+       catalogo.innerHTML += `
+       <div>
+       <img src = ${listaDeFilmes[i]} alt=${listaDeTitulos[i]}><figcaption${listaDeTitulos[i]}
+       </div>
+       `
+       i++
+   } while (i < listaDeFilmes.length)
+
+   
 }
