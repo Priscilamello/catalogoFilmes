@@ -9,7 +9,7 @@
     background-color: #000;
     background-size: cover;
     background-position: center top;
-    background-image: url("https://feriasdecinema.com/wp-content/uploads/2018/07/poderoso-chefao-cenarios-italia.jpg");
+    background-image: url("https://cloud.estacaonerd.com/wp-content/uploads/2019/08/23213718/d23-the-mandalorian-poster-tall-A.jpg");
     background-repeat: no-repeat;
     color: #fff;
     font-size: 1.5rem;
@@ -23,7 +23,7 @@
   }
   
   .page-title {
-    color: rgb(234, 124, 225);
+    color: rgba(255, 0, 0, 0.906);
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
   }
@@ -34,7 +34,11 @@
   }
   
   img {
+       
     max-height: 250px;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 1rem #fff;
+    
   }
   
   #filme, #titulo {
@@ -71,7 +75,7 @@
   
   .retangulo {
     position: absolute;
-    width: 50%;
+    width: 55%;
     height: 35%;
     background-color: #000;
     z-index: -1;
@@ -83,4 +87,8 @@
   .filme{
     padding: 1.5rem;
     width: 13rem;
+    background-color: #00000050;
+    margin: 1rem;
+    border-radius: 1rem;
+
 }
