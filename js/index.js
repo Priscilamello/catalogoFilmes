@@ -22,3 +22,10 @@ let listaDeTitulos = [
 'Jogador N° 1'
 
 ]
+
+//! DOM DOCUMENT OBJECT MODEl acessar e manusear doc no js
+//!tudo que envolve a pag (html etc)
+
+let catalogo = document.querySelector ('#catalogo')
+let i = 0
+let erro = document.querySelector('#erro')
