@@ -1,5 +1,5 @@
 let listaDeFilmes = [
-    'https://imagens.ebc.com.br/70-rZMi6fTwlz8DrudsE2MzzHmU=/365x0/smart/https://radios.ebc.com.br/sites/default/files/thumbnails/image/cartaz_do_filme_laranja_mecanica.jpg',
+    'https://br.web.img3.acsta.net/medias/nmedia/18/91/05/58/20127559.jpg',
     'https://www.filmelgbt.com/wp-content/uploads/2018/09/yXW8XocbanLYcQHmQkqq0clNCFI.jpg',
     'https://m.media-amazon.com/images/I/81AGqBcpYOL._AC_SY550_.jpg',
     'https://br.web.img2.acsta.net/medias/nmedia/18/91/08/82/20128877.JPG',
